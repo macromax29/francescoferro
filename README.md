@@ -18,3 +18,8 @@ Aprire `index.html` oppure pubblicare la cartella su GitHub Pages.
 
 ## Dominio
 Non cambiare ancora DNS o piano Tophost finché la versione di prova non è stata verificata.
+
+
+## v5
+- I messaggi pubblicati compaiono prima del modulo.
+- Pulsante in alto per scorrere direttamente a “Lascia un messaggio”.
