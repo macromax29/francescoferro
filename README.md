@@ -1,25 +1,23 @@
-# francescoferro.com - versione statica di prova
+# Francesco Ferro - guestbook con messaggi.json
 
-Prima ricostruzione statica del sito WordPress, pensata per GitHub Pages.
+La pagina `messaggi.html` legge l'archivio da `messaggi.json`.
 
-## Contenuti già migrati
-- Home
-- La Carriera
-- Articoli
-- Foto / galleria NextGEN
-- Video YouTube
-- navigazione responsive
+## Pubblicare un nuovo messaggio ricevuto via email
+1. Su GitHub apri `messaggi.json`.
+2. Clicca la matita **Edit this file**.
+3. Subito dopo la prima parentesi `[` inserisci:
 
-## Da completare
-- Guestbook / Messaggi: i messaggi di Gwolle Guestbook vanno estratti dal database SQL e filtrati per evitare di pubblicare dati personali non necessari.
+```json
+{
+  "nome": "Mario Rossi",
+  "data": "21/09/2026",
+  "messaggio": "Un caro ricordo del Dott. Francesco Ferro."
+},
+```
 
-## Test locale
-Aprire `index.html` oppure pubblicare la cartella su GitHub Pages.
+4. Premi **Commit changes**.
+5. Il sito si aggiornerà automaticamente.
 
-## Dominio
-Non cambiare ancora DNS o piano Tophost finché la versione di prova non è stata verificata.
+Pubblica solo `nome`, `data` e `messaggio`. Non inserire l'email del mittente.
 
-
-## v5
-- I messaggi pubblicati compaiono prima del modulo.
-- Pulsante in alto per scorrere direttamente a “Lascia un messaggio”.
+Il modulo di invio continua a mandare le richieste via Google Apps Script per la verifica manuale.
